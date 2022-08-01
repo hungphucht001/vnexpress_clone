@@ -1,0 +1,120 @@
+.wrapper-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 7px 0;
+    .date{
+        flex: 1;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #757575;
+    }
+    .logo{
+        padding-right: 10px;
+        border-right: 1px solid #ccc;
+    }
+    .wrap-btn{
+        padding-right: 10px;
+        border-right: 1px solid #ccc;
+        a{
+            .icon{
+                color: #b8b8b8;
+                padding-right: 10px;
+            }
+            padding: 6px 10px;
+            border: 1px solid #e5e5e5;
+            border-radius: 3px;
+            font-size: 14px;
+            transform: all .25s ease;
+            color: #757575;
+            &:hover{
+                color: #4f4f4f;
+                background: #f7f7f7;
+            }
+            + a{
+                margin-left: 15px;
+            }
+            img{
+                width: 16px;
+                margin-right: 5px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    .search{
+        margin-left: 10px;
+        border-radius: 26px;
+        border: 1px solid #e5e5e5;
+        padding: 7px 10px 7px 14px;
+        // width: 160px;
+        display: flex;
+        input{
+            width: 140px;
+            font-size: 14px;
+        }
+        input,
+        button{
+            background-color: transparent;
+            outline: none;
+            
+            border:none;
+        }
+        button{
+            color: #b8b8b8;
+        }
+    }
+    .btnLogin{
+        cursor: pointer;
+        margin-left: 20px;
+        .icon{
+            color:#b8b8b8;
+            margin-right: 10px;
+        }
+        &:hover span{
+            color: #0151d3;
+        }
+    }
+}
+.footer{
+    .wrapper-footer{
+        max-width: 1100px;
+        width: 100%;
+        margin:  0 auto;
+        .top{
+            display: flex;
+            color:#757575;
+            justify-content: space-between;
+            align-items: center;
+            .right{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+    .wrap-icon{
+        display: flex;
+        margin-left: 10px;
+        align-items: center;
+        .icon{
+            margin-left: 8px;
+            width: 35px;
+            cursor: pointer;
+            height: 35px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+            border-radius: 100%;
+        }
+    }
+    .bottom{
+        margin-bottom: 15px;
+        p{
+            margin: 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

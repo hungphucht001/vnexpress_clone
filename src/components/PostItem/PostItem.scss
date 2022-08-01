@@ -1,0 +1,25 @@
+.wrapper-itempost{
+    .title{
+        font-weight: 600;
+    }
+    p{
+        margin-top: 10px;
+    }
+}
+.item-title{
+    padding-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    .title{
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        display: inline-block;
+    }
+    & + .item-title{
+        border-top: 1px solid #ccc;
+    }
+}
+.item-image{
+
+}
