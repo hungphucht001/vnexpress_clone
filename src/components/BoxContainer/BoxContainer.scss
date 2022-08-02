@@ -1,0 +1,12 @@
+@media only screen and (max-width: 1023px) {
+    .Hiodwhihu{
+        &>div:nth-last-of-type(-n+2){
+            display: none;
+        }
+    }
+}
+
+// .jidowqd +.jidowqd{
+//     border-top: 1px solid #ccc;
+//     padding: 10px;
+// }

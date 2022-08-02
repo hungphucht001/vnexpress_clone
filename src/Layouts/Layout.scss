@@ -82,6 +82,46 @@
         max-width: 1100px;
         width: 100%;
         margin:  0 auto;
+        border-top: 4px solid rgb(224, 224, 224);
+        .one{
+            padding: 0;
+            li{
+                margin-bottom: 14px;
+                a{
+                    font-weight: 600;
+                    color: #000;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .menu{
+            column-count: 3;
+            .tow{
+                li{
+                    margin-bottom: 14px;
+                    a{
+                        color: #000;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+        .thre{
+            padding: 0;
+            li{
+                margin-bottom: 14px;
+                a{
+                    color: #000;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
         .top{
             display: flex;
             color:#757575;
@@ -115,6 +155,148 @@
             margin: 0;
             font-size: 14px;
             line-height: 20px;
+        }
+    }
+    .wrap-btn{
+        padding-right: 10px;
+        a{
+            background-color: #f4f4f4;
+            .icon{
+                color: #b8b8b8;
+                padding-right: 10px;
+            }
+            padding: 6px 10px;
+            border: 1px solid #e5e5e5;
+            border-radius: 3px;
+            font-size: 14px;
+            transform: all .25s ease;
+            color: #757575;
+            &:hover{
+                color: #4f4f4f;
+                background: #dbdbdb;
+                transform: all .25s ease;
+            }
+            + a{
+                margin-left: 15px;
+            }
+            img{
+                width: 16px;
+                margin-right: 5px;
+                margin-bottom: 3px;
+            }
+        }
+    }
+    .sdqwdqwd{
+        span{
+            color: #4f4f4f;
+        }
+    }
+    .contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        a{
+            padding-right: 10px;
+            .icon{
+                color: #4f4f4f;
+                margin-right: 7px;
+                font-size: 14px;
+            }
+        }
+    }
+    .phone{
+        display: flex;
+        justify-content: space-between;
+        h6{
+            font-size: 16px;
+            margin-bottom: 0;
+        }
+        span{
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px)
+{
+    .wrapper-header{
+        padding: 7px 40px;
+        .date{
+            
+        }
+        .logo{
+            padding-right: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .wrap-btn{
+            
+        }
+        .search{
+            
+        }
+      
+    }
+    .footer{
+        .wrapper-footer{
+            padding: 0 20px;
+        }
+    }
+}
+@media screen and (max-width: 769px)
+{
+    .wrapper-header{
+        padding: 7px 40px;
+        justify-content: space-between;
+        .date{
+            display: none;
+        }
+        .logo{
+            padding-right: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .wrap-btn{
+            display: none;
+        }
+        .search{
+            
+        }
+    }
+    .footer{
+        .phone{
+            justify-content: flex-start;
+            &>div{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 426px)
+{
+    .br-1{
+        border-right-color: transparent !important;
+    }
+    .wrapper-header{
+        .search{
+            display: none;
+        }
+    }
+    .footer{
+        .tow{
+            padding-left: 0 !important;
+        }
+        .sdqwdqwd{
+            margin-top: 20px;
+        }
+        .top{
+            flex-wrap: wrap;
+            .right{
+                margin-top: 10px;
+            }
+        }
+        .bottom{
+            .row div{
+                margin-bottom: 20px;
+            }
         }
     }
 }

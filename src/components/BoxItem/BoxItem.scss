@@ -40,11 +40,13 @@
 
 .header-box{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    overflow: hidden;
     h5{
         margin-bottom: 0;
         border-bottom: 1px solid var(--color_primary);
         padding-bottom: 5px;
+        white-space: nowrap;
     }
     a.item{
         margin-bottom: 4px;
@@ -52,9 +54,13 @@
         font-size: 13px;
         color: #4f4f4f;
         font-family: arial;
+        white-space: nowrap;
         font-weight: 400;
         &:hover{
             color: rgb(29, 0, 219);
         }
     }
 }
+
+
+

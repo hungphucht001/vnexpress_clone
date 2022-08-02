@@ -1,11 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './PostItem.scss'
 
-function PostItem() {
+function PostItem(props) {
+    const { item } = props
     return (
         <div className='wrapper-itempost'>
-            <span className='title'>Nga tố Ukraine tấn công Hạm đội Biển Đen, Kiev bác bỏ</span>
-            <p>Giới chức ở Crimea cáo buộc Ukraine dùng máy bay không người lái tấn công trụ sở Hạm đội Biển Đen khiến 5 người bị thương, nhưng Kiev bác bỏ.</p>
+            <Link to="detail"><span className='title'>{item && item.name}</span></Link>
+            <p>{item && item.description}</p>
         </div>
     )
 }

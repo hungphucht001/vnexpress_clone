@@ -28,7 +28,7 @@ function Menu() {
 
     return (
         <div className={`wrapper-menu ${isScroll ? "scroll" : ""}`}>
-            <div className='container'>
+            <div className='container-fluid'>
                 {
                     isScroll ?
                         <div className='logo'>
@@ -85,7 +85,7 @@ function Menu() {
                                 <div className='content row'>
                                     {
                                         data.map((item, index) =>
-                                            <div className='col-2 mb-4' key={index}>
+                                            <div className='col-lg-2 col-md-3 col-sm-4 col-6  mb-4' key={index}>
                                                 <span className='title mb-2 d-inline-block'>
                                                     <a href='#'>{item.name}</a>
                                                 </span>

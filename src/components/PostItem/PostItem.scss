@@ -20,6 +20,9 @@
         border-top: 1px solid #ccc;
     }
 }
-.item-image{
 
+@media only screen and (max-width: 765px){
+    .daosdf{
+        margin-top: 10px !important;
+    }
 }

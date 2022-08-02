@@ -6,6 +6,7 @@ import images from '../assets/images'
 import { faClockFour, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'
 import { Button, Modal, ModalBody, ModalFooter, Label, Input, FormGroup, Form } from 'reactstrap';
 import Login from '../components/Login'
+import { Link } from 'react-router-dom'
 
 function Header() {
 
@@ -16,7 +17,7 @@ function Header() {
     return (
         <div className='wrapper-header'>
             <div className='logo'>
-                <img src={images.logo} />
+                <Link to="/"><img src={images.logo} /></Link>
             </div>
             <div className='date'>
                 <span>Chủ nhật, 31/7/2022</span>

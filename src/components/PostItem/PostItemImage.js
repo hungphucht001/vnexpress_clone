@@ -1,16 +1,18 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import images from '../../assets/images'
 import './PostItem.scss'
 
-function PostItemImage() {
+function PostItemImage(props) {
+    const { item } = props
     return (
         <div className='wrapper-itempost row'>
             <div className='col-md-6 pe-0'>
-                <img src={images.image_1} />
+                <Link to='/detail'><img src={item && item.image} /></Link>
             </div>
-            <div className='col-md-6'>
-                <span className='title'>Fan tranh cãi về tân Hoa hậu Hoàn vũ Thái Lan</span>
-                <p>Nhiều fan cho rằng Miss Universe Thái Lan 2022 - Anna Sueangam-iam - không xứng đáng nhận vương miện bằng Á hậu 1 - Nicolene Limsnukan. </p>
+            <div className='col-md-6 daosdf'>
+                <Link to="/detail"> <span className='title'>{item && item.name}</span></Link>
+                <p>{item && item.description}</p>
             </div>
         </div>
     )

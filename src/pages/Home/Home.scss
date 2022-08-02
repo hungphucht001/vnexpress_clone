@@ -29,9 +29,11 @@
     {
         ul{
             align-items: center;
+            flex-wrap: wrap;
             padding: 0;
             li{
                 margin-right: 20px;
+                margin-block: 5px;
                 a{
                     color: #757575;
                     &:hover{
@@ -49,5 +51,11 @@
                 }
             }
         }
+    }
+}
+@media screen and (max-width: 1025px)
+{
+    .wrapper-home{
+        padding-inline: 20px;
     }
 }
