@@ -50,7 +50,7 @@ function Menu() {
                     <ul>
                         {data.map((item, index) => {
                             return (
-                                <li key={index}>
+                                <li className='dwia' key={index}>
                                     <a href='#'>{item.name}</a>
                                     {
                                         item.child &&
